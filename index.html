@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <table class="tableau">
+        <thead > 
+            <tr>
+                <th colspan="2">Grille d'évaluation E5 SLAM</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr class="tableau_row">
+                <td></td>
+                <td>Niveau de maitrise</td>
+                <td>Non évaluable</td>
+                <td>Non maitrisé</td>
+                <td>Maitrise partielle</td>
+                <td>Bonne maitrise</td>
+                <td>Excellente maitrise</td>
+            </tr>
+            <tr class="tableau_row">
+                <td class="skills">Compétences</td>
+                <td class="no_data"></td>
+                <td class="no_data"></td>
+                <td class="no_data"></td>
+                <td class="no_data"></td>
+                <td class="no_data"></td>
+                <td class="no_data"></td>
+            </tr>
+            <tr class="tableau_row">
+                <td class="skills"><strong>Concevoir et développer une solution applicative</strong><br> - Analyser un besoin exprimé et son contexte juridique<br> - Participer à la conception de l’architecture d’une solution applicative<br> - Modéliser une solution applicative<br> - Exploiter les ressources du cadre applicatif (framework)<br> - Identifier, développer, utiliser ou adapter des composants logiciels <br> - Exploiter les technologies Web pour mettre en œuvre les échanges entre applications, y compris de mobilité<br> - Utiliser des composants d’accès aux données <br> - Intégrer en continu les versions d’une solution applicative<br> - Réaliser les tests nécessaires à la validation ou à la mise en production d’éléments adaptés ou développés<br> - Rédiger des documentations technique et d’utilisation d’une solution applicative<br> - Exploiter les fonctionnalités d’un environnement de développement et de tests</td>
+                <td class="no_data"></td>
+                <td><input type="checkbox" name="box" id="no_eval" class="checkbox no_eval" onclick="NoEvaluable()"></td>
+                <td><input type="checkbox" name="box" id="no_master" class="checkbox no_master" onclick="NoMaster()"></td>
+                <td><input type="checkbox" name="box" id="part_master" class="checkbox part_master" onclick="PartMaster()"></td>
+                <td><input type="checkbox" name="box" id="gd_master" class="checkbox gd_master" onclick="GdMaster()"></td>
+                <td><input type="checkbox" name="box" id="exl_master" class="checkbox exl_master" onclick="ExlMaster()"></td>
+            </tr>
+            <tr class="tableau_row">
+                <td class="skills"><strong>Assurer la maintenance corrective ou évolutive d’une solution applicative</strong><br> - Recueillir, analyser et mettre à jour les informations sur une version d’une solution applicative<br> - Évaluer la qualité d’une solution applicative<br> - Analyser et corriger un dysfonctionnement<br> - Mettre à jour des documentations technique et d’utilisation d’une solution applicative<br> - Élaborer et réaliser les tests des éléments mis à jour</td>
+                <td class="no_data"></td>
+                <td><input type="checkbox" name="box" id="no_eval1" class="checkbox no_eval" onclick="NoEvaluable1()"></td>
+                <td><input type="checkbox" name="box" id="no_master1" class="checkbox no_master" onclick="NoMaster1()"></td>
+                <td><input type="checkbox" name="box" id="part_master1" class="checkbox part_master" onclick="PartMaster1()"></td>
+                <td><input type="checkbox" name="box" id="gd_master1" class="checkbox gd_master" onclick="GdMaster1()"></td>
+                <td><input type="checkbox" name="box" id="exl_master1" class="checkbox exl_master" onclick="ExlMaster1()"></td>
+            </tr>
+            <tr class="tableau_row">
+                <td class="skills"><strong>Gérer les données</strong><br> - Exploiter des données à l’aide d’un langage de requêtes<br> - Développer des fonctionnalités applicatives au sein d’un système de gestion de base de données (relationnel ou non)<br> - Concevoir ou adapter une base de données<br> - Administrer et déployer une base de données</td>
+                <td class="no_data"></td>
+                <td><input type="checkbox" name="box" id="no_eval2" class="checkbox no_eval" onclick="NoEvaluable2()"></td>
+                <td><input type="checkbox" name="box" id="no_master2" class="checkbox no_master" onclick="NoMaster2()"></td>
+                <td><input type="checkbox" name="box" id="part_master2" class="checkbox part_master" onclick="PartMaster2()"></td>
+                <td><input type="checkbox" name="box" id="gd_master2" class="checkbox gd_master" onclick="GdMaster2()"></td>
+                <td><input type="checkbox" name="box" id="exl_master2" class="checkbox exl_master" onclick="ExlMaster2()"></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="table_footer_data"><p id="Note">Note : </p></td>
+            </tr>
+        </tfoot>
+        
+      </table>
+
+      <script src="main.js"></script>
+</body>
+</html>
+
+
